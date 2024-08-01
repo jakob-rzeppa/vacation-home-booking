@@ -7,7 +7,8 @@
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker": "docker build . -t jakob.rzeppa/vacation-home-booking:v1 && docker run -p 8080:8080 jakob.rzeppa/vacation-home-booking:v1"
   },
   "author": "Jakob Rzeppa",
   "repository": {
